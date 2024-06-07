@@ -14,33 +14,42 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&none  &none  &lt 2 Q  &kp W  &kp E             &kp R  &kp T      &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
-       &none  &kp A    &kp S  &kp D             &kp F  &kp G      &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-       &none  &kp Z    &kp X  &kp C             &kp V  &kp B      &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                              &kp LEFT_COMMAND  &sl 1  &kp SPACE  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
+&none  &none  &lt 2 Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
+       &none  &kp A    &kp S  &kp D         &kp F             &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+       &none  &kp Z    &kp X  &kp C         &kp V             &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                              &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
             >;
         };
 
         layer_lower {
             bindings = <
-&none  &none  &kp P          &kp O       &kp I      &kp U  &kp Y      &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
-       &none  &kp SEMICOLON  &kp L       &kp K      &kp J  &kp H      &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-       &none  &kp SLASH      &kp PERIOD  &kp COMMA  &kp M  &kp N      &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
-                                         &none      &none  &kp ENTER  &trans     &trans    &lt 3 DEL
+&none  &none  &kp P          &kp O       &kp I      &kp U  &kp Y  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11          &mt RGUI F12
+       &none  &kp SEMICOLON  &kp L       &kp K      &kp J  &kp H  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+       &none  &kp SLASH      &kp PERIOD  &kp COMMA  &kp M  &kp N  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+                                         &none      &none  &none  &trans     &trans    &lt 3 DEL
             >;
         };
 
         layer_raise {
             bindings = <
-&trans  &none  &none         &kp N7        &kp N8        &kp N9         &kp ESCAPE   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &none  &kp TAB       &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp KP_PLUS  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &none  &kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_DOT   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                           &kp TAB       &kp BACKSPACE  &kp ENTER    &lt 3 ESC     &trans    &trans
+&trans  &none  &none             &kp N7        &kp N8        &kp N9         &kp ESCAPE   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
+        &none  &kp TAB           &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp KP_PLUS  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+        &none  &kp LEFT_CONTROL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_DOT   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                               &kp TAB       &kp BACKSPACE  &kp ENTER    &lt 3 ESC     &trans    &trans
             >;
         };
 
