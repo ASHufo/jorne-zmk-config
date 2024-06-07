@@ -19,10 +19,10 @@
 
         default_layer {
             bindings = <
-&none  &none  &lt 2 Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
-       &none  &kp A    &kp S  &kp D         &kp F             &kp G        &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-       &none  &kp Z    &kp X  &kp C         &kp V             &kp B        &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                              &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
+&none  &none  &lt 2 Q  &kp W  &kp E             &kp R  &kp T      &kp Y      &kp U           &kp I      &kp O    &kp P     &kp LBKT       &mt RWIN RBKT
+       &none  &kp A    &kp S  &kp D             &kp F  &kp G      &kp H      &kp J           &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+       &none  &kp Z    &kp X  &kp C             &kp V  &kp B      &kp N      &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                              &kp LEFT_COMMAND  &sl 1  &kp SPACE  &lt 1 ESC  &mt RSHFT BSPC  &lt 2 DEL
             >;
         };
 
@@ -37,10 +37,10 @@
 
         layer_raise {
             bindings = <
-&trans  &none  &none         &kp N7        &kp N8        &kp N9        &kp BACKSPACE  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &none  &kp TAB       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS    &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &none  &kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT     &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                           &kp TAB       &kp ESCAPE    &kp ENTER      &lt 3 ESC     &trans    &trans
+&trans  &none  &none         &kp N7        &kp N8        &kp N9         &kp ESCAPE   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
+        &none  &kp TAB       &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp KP_PLUS  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+        &none  &kp NUMBER_1  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_DOT   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                           &kp TAB       &kp BACKSPACE  &kp ENTER    &lt 3 ESC     &trans    &trans
             >;
         };
 
