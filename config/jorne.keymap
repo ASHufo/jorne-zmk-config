@@ -23,17 +23,22 @@
 
         default {
             bindings = <&to 0>;
-            key-positions = <2 15>;
+            key-positions = <2 6>;
         };
 
         game-layer {
             bindings = <&to 3>;
-            key-positions = <27 15>;
+            key-positions = <15 19>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <5 6>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
         };
     };
 
