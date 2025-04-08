@@ -41,9 +41,9 @@
             key-positions = <18 19>;
         };
 
-        StarCraf-lay {
+        test {
             bindings = <&to 5>;
-            key-positions = <27 31>;
+            key-positions = <19 31>;
         };
     };
 
@@ -100,7 +100,7 @@
 &none  &none  &lt 2 Q  &kp W  &kp E         &kp R               &kp T        &none  &none  &none  &none  &none  &none  &none
        &none  &kp A    &kp S  &kp D         &kp F               &kp G        &none  &none  &none  &none  &none  &none
        &none  &lt 4 Z  &kp X  &kp C         &kp V               &kp B        &none  &none  &none  &none  &none  &none
-                              &kp LEFT_ALT  &lt 4 SINGLE_QUOTE  &lt 1 SPACE  &none  &none  &none
+                              &kp NUMBER_1  &lt 4 SINGLE_QUOTE  &lt 1 SPACE  &none  &none  &none
             >;
         };
     };
