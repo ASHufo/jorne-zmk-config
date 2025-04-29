@@ -41,14 +41,14 @@
             key-positions = <18 19>;
         };
 
-        test {
-            bindings = <&to 5>;
-            key-positions = <19 31>;
+        apex {
+            bindings = <&to 6>;
+            key-positions = <27 31>;
         };
 
-        test2 {
-            bindings = <&to 4>;
-            key-positions = <18 30>;
+        SC {
+            bindings = <&to 5>;
+            key-positions = <29 31>;
         };
     };
 
@@ -91,7 +91,7 @@
             >;
         };
 
-        StarCraft_numb {
+        sc_numb {
             bindings = <
 &trans  &trans  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &kp NUMBER_6      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans
@@ -100,7 +100,7 @@
             >;
         };
 
-        StarCraft_main {
+        sc_main {
             bindings = <
 &none  &none  &lt 2 Q  &kp W  &kp E         &kp R               &kp T        &none  &none  &none  &none  &none  &none  &none
        &none  &kp A    &kp S  &kp D         &kp F               &kp G        &none  &none  &none  &none  &none  &none
