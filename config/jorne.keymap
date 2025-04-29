@@ -93,19 +93,19 @@
 
         sc_main {
             bindings = <
-&none  &none  &kp Q  &kp W  &kp E         &kp R  &kp T      &none  &none  &none  &none  &none  &none  &none
-       &none  &kp A  &kp S  &kp D         &kp F  &kp G      &none  &none  &none  &none  &none  &none
-       &none  &kp Z  &kp X  &kp C         &kp V  &kp B      &none  &none  &none  &none  &none  &none
-                            &kp LEFT_WIN  &mo 6  &kp SPACE  &none  &none  &none
+&none  &none  &kp Q  &kp W  &kp E         &kp R  &kp T        &none  &none  &none  &none  &none  &none  &none
+       &none  &kp A  &kp S  &kp D         &kp F  &kp G        &none  &none  &none  &none  &none  &none
+       &none  &kp Z  &kp X  &kp C         &kp V  &kp B        &none  &none  &none  &none  &none  &none
+                            &kp LEFT_WIN  &mo 6  &lt 7 SPACE  &none  &none  &none
             >;
         };
 
         apex_main {
             bindings = <
-&none  &none  &kp ESCAPE  &kp W  &kp E             &kp R  &kp T      &none  &none  &none  &none  &none  &none  &none
-       &none  &kp A       &kp S  &kp D             &kp F  &kp G      &none  &none  &none  &none  &none  &none
-       &none  &kp Z       &kp X  &kp C             &kp V  &kp B      &none  &none  &none  &none  &none  &none
-                                 &kp LG(LEFT_WIN)  &mo 6  &kp SPACE  &none  &none  &none
+&none  &none  &kp Q  &kp W  &kp E             &kp R  &kp T      &none  &none  &none  &none  &none  &none  &none
+       &none  &kp A  &kp S  &kp D             &kp F  &kp G      &none  &none  &none  &none  &none  &none
+       &none  &kp Z  &kp X  &kp C             &kp V  &kp B      &none  &none  &none  &none  &none  &none
+                            &kp LG(LEFT_WIN)  &mo 6  &kp SPACE  &none  &none  &none
             >;
         };
 
@@ -115,6 +115,15 @@
         &none  &kp LEFT_SHIFT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS     &none  &none  &none  &none  &none  &none
         &none  &kp LEFT_CONTROL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &none  &none  &none  &none  &none  &none
                                                &none         &none         &none         &none  &none  &none
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&none  &none  &kp P          &kp O       &kp I      &kp U  &kp Y  &none  &none  &none  &none  &none  &none  &none
+       &none  &kp SEMICOLON  &kp L       &kp K      &kp J  &kp H  &none  &none  &none  &none  &none  &none
+       &none  &kp SLASH      &kp PERIOD  &kp COMMA  &kp M  &kp N  &none  &none  &none  &none  &none  &none
+                                         &none      &none  &none  &none  &none  &none
             >;
         };
     };
